@@ -354,7 +354,17 @@
 	display: inline-block;
     width:280px;
 	padding-right: 17px;
+}
+
+
+
+.services_banner_logo:hover {
+    filter: sepia(150%) ; 
+
+ /*   -webkit-filter:hue-rotate(45deg); для расширенной поддержки свойства
+ filter:hue-rotate(45deg); эффект замены цветов изображения */
 }	
+
 .services_banner_logo_img{
 	text-align: center;
 }
@@ -362,6 +372,9 @@
 	position: relative;
 	top:15px;
 	text-align: center;
+}
+.services_banner__text-p2:hover {
+	filter: grayscale(1);
 }
 .services_banner__text-p1 {
 	font-family: 'Raleway SemiBold';
@@ -584,7 +597,8 @@
 	padding-right: 27px;
 	padding-bottom: -22px;
 	margin-top:-30px;
-}	
+}
+
 .services_logo_img{
 	text-align: center;
 }
@@ -896,16 +910,36 @@
 	top: 155px;
     width:1200px;
 }	
+
 .recent_posts_content_item{
  	position: relative;
 	display: inline-block;
-    width:370px;
-	height:370px;
-	padding-right: 27px;
+    width:333px;
+	height:390px;
+	padding-right: 37px;
 	padding-bottom: -22px;
 	margin-top:-30px;
+	margin-right:20px;
 
-}	
+}
+.recent_posts_logo_img2{
+	filter: brightness(140%);
+}
+.recent_posts_content_item:hover{
+	background: #362f2d;
+}
+.recent_posts_content_item:hover .recent_posts_content_date{
+	background: #c7b299;
+}
+.recent_posts_content_item:hover .recent_posts_content_date2{
+	background: #a48d72;
+}
+.recent_posts_content_item:hover .recent_posts_content_item__text-p1{
+	color: white;
+}.
+.recent_posts_content_item:hover .recent_posts_content_item__text-p2{
+	color: #c7b299;
+}.
 .recent_posts_logo_img{
 	z-index: 0;
 }
@@ -914,11 +948,18 @@
 	top:-287px;
     z-index: 1;
 	left:20px;
-	width: 100px;
+	width: 50px;
+	height: 35px;
+	background: #363636;
+    border-radius: 5px 5px 0px 0px;
 }
 .recent_posts_content_date2{
 	position: relative;
 	bottom: 4px;
+	width: 50px;
+	height: 25px;
+	background: #252525;
+	border-radius: 0px 0px 5px 5px;
 }
 .recent_posts_content_date__text-p1{
 	font-family: 'Montserrat Light';
@@ -929,6 +970,7 @@
     left:9px;
 	top:7px;
 	z-index:2;
+
 }
 .recent_posts_content_date__text-p2{
 	font-family: 'Roboto Regular';
@@ -938,12 +980,12 @@
     font-weight: 400;
     left:15px;
 	top:40px;
-	z-index:2;
+	z-index:3;
 }
 .recent_posts_content_foot{
 	position: relative;
 	text-align: center;
-	top:-152px;
+	top:-154px;
 }
 .recent_posts_content_item_slaider{
 	position: absolute;
@@ -986,28 +1028,6 @@
 	line-height: 20px;
     left:29px;
 	top:60px;
-	bottom: 15px;
-	z-index:1;
-}
-.recent_posts_content_item__text-p4 {
-	font-family: 'Raleway Medium';
-	color:#c7b29a;
-	position: relative;
-    font-size: 20px;
-    font-weight: 500;
-    left:29px;
-	top:25px;
-	z-index:1;
-}
-.recent_posts_content_item__text-p5 {
-	font-family: 'Montserrat Light';
-	color:#d1d1d1;
-	position: relative;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 20px;
-    left:29px;
-	top:30px;
 	bottom: 15px;
 	z-index:1;
 }
@@ -1067,9 +1087,9 @@
 }
 .footer_banner_column_1{
 	position: relative;
-	width:288px;
+	width:270px;
 	height:370px;
-	margin-right: 40px;
+	margin-right: 25px;
 	display:inline-block;
 	top:-30px;
 }
@@ -1078,7 +1098,7 @@
 	display:inline-block;
 	width:288px;
 	height:370px;
-	margin-right: 40px;
+	margin-right: 25px;
 	top:-10px;
 }
 .footer_banner_column_3{
@@ -1086,7 +1106,7 @@
 	display:inline-block;
 	width:288px;
 	height:370px;
-	margin-right: 40px;
+	margin-right: 15px;
 	top:-33px;
 }
 .footer_banner_column_4{
@@ -1094,7 +1114,7 @@
 	display:inline-block;
 	width:288px;
 	height:370px;
-	margin-right: 40px;
+	margin-right: 10px;
 	top:0px;
 }
 .footer_banner_column_logo{
@@ -1244,5 +1264,5 @@
 }
 .copyright_menu_left{
 	float:left;
-	margin-right:520px;
+	margin-right:410px;
 }
